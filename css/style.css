@@ -46,6 +46,16 @@ nav {
   text-decoration: none;
   display: inline-block;
   width: 80%;
+  transition: color,width,height,background,border-radius;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 3s;
+}
+
+nav a:hover {
+  color: #000000;
+  background-color: #D3D3D3;
+  border: 3px solid #0000CD;
 }
 
 ul {
