@@ -52,3 +52,20 @@ ul {
   text-align: right;
   display:inline-block;
 }
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+ .icon-solid::before {
+  font: var(--fa-font-solid);
+ }
+
+ .icon-droplet::before {
+  content: "\f043"
+ }
+
+ .droplet-icon-list {
+  align-items: center;
+ }
