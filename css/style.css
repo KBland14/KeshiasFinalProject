@@ -10,7 +10,7 @@ header {
 }
 
 main { 
-  display: inline-block;
+  display: grid;
   background-color: #20B2AA; 
   font-size: 100%;
 
@@ -25,7 +25,9 @@ h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #0000CD;
 }
-
+h2 {
+  text-align: center;
+}
 p {
   line-height: 110%;
 }
@@ -53,19 +55,23 @@ ul {
   display:inline-block;
 }
 
-.icon::before {
-  display: inline-block;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+.fa-eye {
+  font-size: 55px;
+  margin: auto;
+  color: #0000CD;
+  
 }
- .icon-solid::before {
-  font: var(--fa-font-solid);
- }
 
- .icon-droplet::before {
-  content: "\f043"
- }
+.fa-fill-drip {
+  font-size: 30px;
+  margin: auto;
+  color: #2B65EC;
 
- .droplet-icon-list {
-  align-items: center;
- }
+}
+
+.fa-palette {
+  font-size: 30px;
+  margin: auto;
+  color: #2B65EC;
+
+}
