@@ -114,7 +114,6 @@ a {
 
 .picgrid {
   display: grid;
-  grid: 2fr;
   width: 100%;
 }
 
@@ -162,6 +161,19 @@ figcaption {
   grid-template-columns: 45% 45%;
 
   }
+
+}
+
+@media screen and (min-width: 1080px) {
+
+  .picgrid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
+
+ .picgrid figure:nth-child(2n) img {
+      border: 6px ridge #0000CD;
+    }
 
 }
 
