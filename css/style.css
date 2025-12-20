@@ -32,21 +32,6 @@ p {
   line-height: 110%;
 }
 
-nav {
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    text-decoration: none;
-    width: 80%;
-    text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-}
-
 #navpic {
   width: 35%;
   top: 20px;
@@ -54,6 +39,53 @@ ul {
   text-align: right;
   display:inline-block;
 }
+
+nav {
+  display: none;
+}
+
+.navdrop {
+  position: relative;
+  display: inline-block;
+}
+
+.navdown {
+  background-color :#0000A0;
+  color: #FFFFFF;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.navlist {
+  display: none;
+  position: absolute;
+  background-color: #357EC7;
+  min-width: 50px;
+  box-shadow: #7FFFD4;
+  z-index: 1;
+}
+
+.navlist a {
+  color: #000000;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navlist a:hover {
+  background-color: #ddd; 
+
+}
+
+.navdrop:hover .navlist {
+  display: block;
+}
+
+.navlist:hover .navdown {
+  background-color: #7FFFD4;
+}
+
 
 .fa-eye {
   font-size: 55px;
@@ -81,6 +113,7 @@ a {
 }
 
 .picgrid img{
+  margin: auto;
   border: solid 6px #357EC7;
   width: 50%;
 
@@ -92,7 +125,27 @@ figcaption {
 }
 
 @media screen and (min-width: 800px) {
-  figcaption {
+
+nav {
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  text-decoration: none;
+  width: 80%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+} 
+.navdrop {
+  display: none;
+ } 
+
+figcaption {
     display: block;
     color:#000000;
   }
@@ -102,6 +155,8 @@ figcaption {
   grid-template-columns: 45% 45%;
 
   }
+
+
 
 }
 
