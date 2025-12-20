@@ -80,18 +80,28 @@ a {
   color: #0000A0;
 }
 
-div {
-  display: grid;
-  grid-template-columns: 45% 45%;
-
-}
-
 .picgrid img{
   border: solid 6px #357EC7;
-  width: 100%;
+  width: 50%;
 
 }
 
 figcaption {
- color:#000000;
+  display: none;
+  
 }
+
+@media screen and (min-width: 800px) {
+  figcaption {
+    display: block;
+    color:#000000;
+  }
+
+  div {
+  display: grid;
+  grid-template-columns: 45% 45%;
+
+  }
+
+}
+
