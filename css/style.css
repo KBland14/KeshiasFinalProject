@@ -177,3 +177,61 @@ figcaption {
 
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #810541;
+  }
+  header {
+    background-color: #151B54;
+  }
+  main {
+    background-color: #191970;
+  }
+  h1 {
+    color: #838996;
+  }
+  h2{
+    color: #757575
+  }
+  #navpic {
+    border: #BCC6CC;
+  }
+  .navdown {
+    background-color: #737CA1;
+  }
+  .navlist {
+    background-color: #00008B;
+  }
+  .navlist a {
+    color: #FFDF00;
+  }
+  .navlist a:hover {
+    background-color: #040720;
+  }
+  .navlist:hover .navdown {
+    background-color: #29465B;
+  }
+  .fa-eye {
+    color: #800080;
+  }
+  .fa-fill-drip {
+    color: #800080;
+  }
+  .fa-palette {
+    color: #800080;
+  }
+  a {
+    color: #5865F2;
+  }
+  .picgrid img {
+    border: 6px solid #DAA520;
+  }
+  figcaption {
+    color: #C0C0C0;
+  }
+  p {
+    color: #C0C0C0;
+  }
+
+}
+
