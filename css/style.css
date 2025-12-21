@@ -177,7 +177,7 @@ figcaption {
 
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: liight) {
   body {
     background-color: #810541;
   }
