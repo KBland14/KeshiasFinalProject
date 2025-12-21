@@ -236,4 +236,174 @@ figcaption {
 
 }
 
+.navlist a {
+  color: #000000;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navlist a:hover {
+  background-color: #93FFE8; 
+
+}
+
+.navdrop:hover .navlist {
+  display: block;
+}
+
+.navlist:hover .navdown {
+  background-color: #7FFFD4;
+}
+
+
+.fa-eye {
+  font-size: 55px;
+  margin: auto;
+  color: #0000CD;
+  
+}
+
+.fa-fill-drip {
+  font-size: 30px;
+  margin: auto;
+  color: #2B65EC;
+
+}
+
+.fa-palette {
+  font-size: 30px;
+  margin: auto;
+  color: #2B65EC;
+
+}
+
+a {
+  color: #0000A0;
+}
+
+.picgrid {
+  display: grid;
+  width: 100%;
+}
+
+.picgrid img{
+  border: solid 6px #357EC7;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  display: none;
+  
+}
+
+@media screen and (min-width: 800px) {
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  text-decoration: none;
+  width: 80%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+} 
+.navdrop {
+  display: none;
+ } 
+
+figcaption {
+    display: block;
+    color:#000000;
+  }
+
+.picgrid {
+  display: grid;
+  grid-template-columns: 45% 45%;
+
+  }
+
+}
+
+@media screen and (min-width: 1080px) {
+
+  .picgrid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
+
+ .picgrid figure:nth-child(2n) img {
+      border: 6px ridge #0000CD;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #810541;
+  }
+  header {
+    background-color: #151B54;
+  }
+  main {
+    background-color: #191970;
+  }
+  h1 {
+    color: #838996;
+  }
+  h2{
+    color: #757575;
+  }
+  #navpic {
+    border: 3px solid #BCC6CC;
+  }
+  .navdown {
+    background-color: #737CA1;
+    color: #000000;
+  }
+  .navlist {
+    background-color: #00008B;
+  }
+  .navlist a {
+    color: #FFDF00;
+  }
+  .navlist a:hover {
+    background-color: #040720;
+  }
+  .navlist:hover .navdown {
+    background-color: #29465B;
+  }
+  .fa-eye {
+    color: #800080;
+  }
+  .fa-fill-drip {
+    color: #800080;
+  }
+  .fa-palette {
+    color: #800080;
+  }
+  a {
+    color: #CECECE;
+  }
+  .picgrid img {
+    border: 6px solid #DAA520;
+  }
+  figcaption {
+    color: #C0C0C0;
+  }
+  p {
+    color: #C0C0C0;
+  }
+
+}
+
 
