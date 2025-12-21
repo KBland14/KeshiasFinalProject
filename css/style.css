@@ -177,7 +177,7 @@ figcaption {
 
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   body {
     background-color: #810541;
   }
@@ -191,10 +191,10 @@ figcaption {
     color: #838996;
   }
   h2{
-    color: #757575
+    color: #757575;
   }
   #navpic {
-    border: #BCC6CC;
+    border: 3px solid #BCC6CC;
   }
   .navdown {
     background-color: #737CA1;
