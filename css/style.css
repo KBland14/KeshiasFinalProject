@@ -198,6 +198,7 @@ figcaption {
   }
   .navdown {
     background-color: #737CA1;
+    color: #000000;
   }
   .navlist {
     background-color: #00008B;
@@ -221,7 +222,7 @@ figcaption {
     color: #800080;
   }
   a {
-    color: #5865F2;
+    color: #CECECE;
   }
   .picgrid img {
     border: 6px solid #DAA520;
